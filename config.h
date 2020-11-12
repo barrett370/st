@@ -120,27 +120,38 @@ unsigned int tabspaces = 8;
 *
 */
 static const char *colorname[] = {
-  "#282c34", /* base00 */
-  "#f07178", /* base08 */
-  "#c3e88d", /* base0B */
-  "#ffcb6b", /* base0A */
-  "#82aaff", /* base0D */
-  "#c792ea", /* base0E */
-  "#89ddff", /* base0C */
-  "#eeffff", /* base05 */
-  "#4a4a4a", /* base03 */
-  "#f78c6c", /* base09 */
-  "#303030", /* base01 */
-  "#353535", /* base02 */
-  "#b2ccd6", /* base04 */
-  "#eeffff", /* base06 */
-  "#ff5370", /* base0F */
-  "#ffffff", /* base07 */
+    /* 8 normal colors */
+       "#282a36",
+       "#ff5c57",
+       "#5af78e",
+       "#f3f99d",
+       "#57c7ff",
+       "#ff6ac1",
+       "#9aedfe",
+       "#f1f1f0",
+ 
+       /* 8 bright colors */
+       "#686868",
+       "#ff5c57",
+       "#5af78e",
+       "#f3f99d",
+       "#57c7ff",
+       "#ff6ac1",
+       "#9aedfe",
+       "#eff0eb",
+ 
+       [255] = 0,
+ 
+       /* more colors can be added after 255 to use with DefaultXX */
+       "#282a36",
+       "#eff0eb",
+       "#97979b",
+
 };
 
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 13;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+static unsigned int defaultcs = 258;
 static unsigned int defaultrcs = 0;
 /*
  * Default colors (colorname index)
