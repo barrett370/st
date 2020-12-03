@@ -9,6 +9,8 @@ static char *font = "FiraCode Nerd Font Mono:pixelsize=23:antialias=true:autohin
 static int borderpx = 2;
 
 float alpha = 0.9;
+int cursorstyle = 5;
+int stcursor = 5;
 
 /*
  * What program is execed by st depends of these precedence rules:
